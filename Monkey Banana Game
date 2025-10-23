@@ -1,3 +1,5 @@
+#Maxwell Gentzler, Anastasia Wilbourne, Isabella Tipi
+
 def bananabid(my_player_number, my_bananas, monkey_position, opponent_bananas, past_bid_list, turn_number):
     
     if opponent_bananas ==0:
