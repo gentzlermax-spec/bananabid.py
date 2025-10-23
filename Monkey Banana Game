@@ -1,0 +1,25 @@
+def bananabid(my_player_number, my_bananas, monkey_position, opponent_bananas, past_bid_list, turn_number):
+    
+    if opponent_bananas ==0:
+       return 1
+    
+    if (my_player_number  == 1 and monkey_position == -2) or (my_player_number == 2 and monkey_position == 2):
+       return my_bananas
+
+    if monkey_position == 0:
+       return standard_bid
+    if my_bananas <= 50:
+      standard_bid = 5
+      return 5
+    elif my_bananas <= 100:
+        standard_bid = 10
+        return 10
+    elif my_bananas <= 150:
+        standard_bid = 15
+        return 15
+    elif my_bananas <= 175:
+        standard_bid = 20
+        return 20
+    else:
+       standard_bid = 25
+       return 25
